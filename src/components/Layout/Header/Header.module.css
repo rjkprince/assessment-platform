@@ -1,0 +1,54 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 80px;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.Logo{
+    margin: 0;
+    width: 200px;
+    cursor: pointer;
+}
+.Nav{
+    text-decoration: none;
+    color: black;
+}
+.NavSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+.UserSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Bell{
+    font-size: 20px;
+ 
+}
+
+.User{
+    margin-right: 5px;
+   
+}
+.Notification{
+    position: relative;
+}
+.Count{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: #fff;
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: red;
+}
