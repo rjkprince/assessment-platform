@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import classes from './Card.module.css'
-
+import {Link} from 'react-router-dom'
 export default class Card extends Component {
 
 	 render() {
         return (
 			<div className={classes.CardContainer}>
-				<a href="#">
+				<Link to={`/dashboard/${this.props.title.replace(/\s/g,'')}`}>
+			
 					<div className={classes.CardWrapper}>
 						<div className={classes.CardContent}>
 							<div className={classes.CardThumbnail}>
@@ -22,7 +23,8 @@ export default class Card extends Component {
                     	</div>
                     </div>
 					</div>
-				</a>
+		
+				</Link>
 			</div>
     	)
 	}
