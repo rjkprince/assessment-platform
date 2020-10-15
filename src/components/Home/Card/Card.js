@@ -6,7 +6,7 @@ export default class Card extends Component {
 	 render() {
         return (
 			<div className={classes.CardContainer}>
-				<Link to={`/dashboard/${this.props.title.replace(/\s/g,'')}`}>
+				<Link to={`/dashboard/${this.props.title.replace(/\s/g,'')+'#'+this.props.id}`}>
 			
 					<div className={classes.CardWrapper}>
 						<div className={classes.CardContent}>

@@ -1,0 +1,58 @@
+.Topic{
+    width: 80%;
+    margin: 65px auto;
+    background-color: #fff;
+    box-shadow: 0 0 25px #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+.TitleSection{
+    display: flex;
+    align-items: center;
+}
+.TopicImg{
+    width: 124px;
+    height: 124px;
+    margin: 0 24px 24px 0;
+}
+.Title{
+    color: #0096ff;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    letter-spacing: .4px;
+}
+.Score{
+    color: rgba(0,0,0,0.7);
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0;
+}
+.ScoreTitle{
+    color: rgba(0,0,0,0.4);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+.Problem{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+.ProblemStatement{
+    font-size: 19px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.7);;
+}
+.ProblemStatus{
+    color: #cc0000;
+    font-size: 19px;
+    font-weight: 700;
+}

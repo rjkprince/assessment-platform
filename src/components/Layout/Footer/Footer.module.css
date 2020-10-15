@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 .FooterNav h1{
-    color: rgb(148, 145, 145);
+    color: hsla(0,0%,100%,.5);
     font-size: 16px;
     font-weight: 500;
     margin: 20px 0;
