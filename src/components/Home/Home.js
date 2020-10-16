@@ -17,6 +17,7 @@ export default class Home extends Component {
         })
         .catch(err=>{
             console.log('error while get request to practice_arena')
+            console.log(err.toString().split(': ')[1]==='Network Error')
         })
     }
 

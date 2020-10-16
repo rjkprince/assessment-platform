@@ -11,7 +11,7 @@ export default class Card extends Component {
 					<div className={classes.CardWrapper}>
 						<div className={classes.CardContent}>
 							<div className={classes.CardThumbnail}>
-								<img src={this.props.img} alt="edyoda_img"/>
+								<img src={this.props.thumbnail} alt="edyoda_img"/>
 							</div>
 						</div>
 						<div className={classes.CardContent}>
@@ -19,7 +19,7 @@ export default class Card extends Component {
                             {this.props.title}
                         </div>
                         <div className={classes.Amount}>
-                        	{this.props.unit}
+                        	{this.props.videos}
                     	</div>
                     </div>
 					</div>
