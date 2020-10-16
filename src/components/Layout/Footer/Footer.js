@@ -46,10 +46,10 @@ export default class Footer extends Component {
                     {/* 4 Icons */}
                     <div className={classes.ConnectDiv}>
                         <div>
-                            <FontAwesomeIcon icon={faMapMarkerAlt} className={classes.BrandIcon} />
-                            <FontAwesomeIcon icon={faTwitter} className={classes.BrandIcon}/>
-                            <FontAwesomeIcon icon={faFacebookF} className={classes.BrandIcon}/>
-                            <FontAwesomeIcon icon={faLinkedinIn} className={classes.BrandIcon}/>
+                            <a href="#"><FontAwesomeIcon icon={faMapMarkerAlt} className={classes.BrandIcon} /></a>
+                            <a href="#"><FontAwesomeIcon icon={faTwitter} className={classes.BrandIcon}/></a>
+                            <a href="#"><FontAwesomeIcon icon={faFacebookF} className={classes.BrandIcon}/></a>
+                            <a href="#"><FontAwesomeIcon icon={faLinkedinIn} className={classes.BrandIcon}/></a>
                         </div>
                     </div>
                     <div className={classes.CopyRightIcon}><p>
