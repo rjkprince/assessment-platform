@@ -17,6 +17,7 @@ margin:0;
     width:100%;
     display: flex;
     border:3px solid #0095FF;
+    border-radius:10px;
    
     
 }
@@ -25,7 +26,7 @@ margin:0;
     /* height:100%; */
     /* border:1px solid black; */
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 .SerialNo{
     width:10%;
@@ -35,11 +36,14 @@ margin:0;
     font-weight: bold;
     font-style: italic;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     margin:0;
+    margin-bottom:1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .ProblemStatement{
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -47,7 +51,7 @@ margin:0;
     margin:0;
 }
 .Level{
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -55,13 +59,14 @@ margin:0;
     margin:0;
 }
 .Todo{
-    margin:0px;
-    /* border:2px solid #0095FF; */
-    text-align: center;
+    margin:10px;
+    border:3px solid #0095FF;
+    /* text-align: center; */
     color:#0095FF;
-    padding: 0.5rem;
+    padding: 0.2rem;
     font-weight: bold;
     font-style: italic;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
+    height:40px;
 }
