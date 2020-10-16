@@ -37,8 +37,9 @@ class Topic extends Component {
             let TopicsArray=this.state.topicData.data.map(item=>{
                 return (
                     <div className={classes.Problem} key={item.id}>
-                        <p className={classes.ProblemStatement}>{item.topic}</p>
-                        <p className={classes.ProblemStatus}>{item.status}</p>
+                        <p className={classes.ProblemStatement}>{item.topic}<br/><p className={classes.Date}>{item.date === undefined ? null :"Submission Date: "+ item.date}</p></p>
+                        <p className={`${item.status==="Pending" ? classes.ProblemStatus : classes.ScoreStatus}`}>{item.status}</p>
+                      
                     </div>
                 )
             })

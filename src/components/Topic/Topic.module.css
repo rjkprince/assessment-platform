@@ -56,3 +56,13 @@
     font-size: 19px;
     font-weight: 700;
 }
+.ScoreStatus{
+    color:#8A97A5;
+    font-size: 16px;
+    font-weight: 700;
+}
+.Date{
+    margin-top: 5px;
+    color:#D9DAD9;
+    margin-bottom: -10px;
+}
