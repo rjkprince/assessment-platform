@@ -33,8 +33,8 @@ export default class Footer extends Component {
                 </div>
                 <div className={classes.FooterNav}>
                     <h1>CONNECT</h1>
-                    <a href="#">2nd Floor #188, Survey No. - 123/1,<br/> Incubes Building Next to McDonalds,<br/>
-                     ITPL Main Rd, Brookefield, Bengaluru,<br/> Karnataka-560037, India</a>
+                    <p>2nd Floor #188, Survey No. - 123/1,<br/> Incubes Building Next to McDonalds,<br/>
+                     ITPL Main Rd, Brookefield, Bengaluru,<br/> Karnataka-560037, India</p>
                     <div className={classes.ConnectDiv}>
                     <FontAwesomeIcon className={classes.Envelope} icon={faEnvelope}/>
                     <a href="#" className={classes.ConnectOption}> hello@edyoda.com</a>
