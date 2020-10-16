@@ -1,0 +1,67 @@
+p{
+    color:black;
+}
+
+.ProblemList{
+    width:85%;
+    margin:auto;
+}
+.ProblemTitle{
+font-style: italic;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+margin:0;
+}
+.ProblemCard{
+    width:100%;
+    display: flex;
+    border:3px solid #0095FF;
+   
+    
+}
+.ProblemStatementDiv{
+    width:75%;
+    /* height:100%; */
+    /* border:1px solid black; */
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.SerialNo{
+    width:10%;
+    background-color: #0095FF;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin:0;
+}
+.ProblemStatement{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+    margin:0;
+}
+.Level{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+    margin:0;
+}
+.Todo{
+    margin:0px;
+    /* border:2px solid #0095FF; */
+    text-align: center;
+    color:#0095FF;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-style: italic;
+    box-sizing: border-box;
+    font-size: 16px;
+}

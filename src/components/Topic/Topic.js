@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Topic.module.css'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 class Topic extends Component {
     state={
@@ -37,7 +38,9 @@ class Topic extends Component {
             let TopicsArray=this.state.topicData.data.map(item=>{
                 return (
                     <div className={classes.Problem} key={item.id}>
+                        <Link to={`/courses/${this.state.cardData.title}/${this.props.location.hash.split('#')[1]}/${item.id}`}>
                         <p className={classes.ProblemStatement}>{item.topic}<br/><p className={classes.Date}>{item.date === undefined ? null :"Submission Date: "+ item.date}</p></p>
+                        </Link>
                         <p className={`${item.status==="Pending" ? classes.ProblemStatus : classes.ScoreStatus}`}>{item.status}</p>
                       
                     </div>
