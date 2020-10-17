@@ -77,13 +77,36 @@ class Topic extends Component {
         <div className={classes.TitleSection}>
           <img
             src={this.state.cardData.thumbnail}
-            className={classes.TopicImg}
+            className={`${classes.TopicImg} ${
+              this.props.location.hash.split("#")[1] === "130720"
+                ? classes.ClassroomImg
+                : null
+            }`}
             alt="topic-img"
           />
           <div>
             <p className={classes.Title}>{this.state.cardData.title}</p>
-            <p className={classes.Score}>0.0%</p>
-            <p className={classes.ScoreTitle}>Avg Score</p>
+            {this.props.location.hash.split("#")[1] === "130720" ? (
+              <div className={classes.ScoreContainer}>
+                <div className={classes.ScoreData}>
+                  <p className={classes.Score}>18</p>
+                  <p className={classes.ScoreTitle}>Class Rank</p>
+                </div>
+                <div className={classes.ScoreData}>
+                  <p className={classes.Score}>0.0%</p>
+                  <p className={classes.ScoreTitle}>Avg Score</p>
+                </div>
+                <div className={classes.ScoreData}>
+                  <p className={classes.Score}>0.0</p>
+                  <p className={classes.ScoreTitle}>SHS</p>
+                </div>
+              </div>
+            ) : (
+              <div className={classes.ScoreData}>
+                <p className={classes.Score}>0.0%</p>
+                <p className={classes.ScoreTitle}>Avg Score</p>
+              </div>
+            )}
           </div>
         </div>
         <div className={classes.ProblemSection}>{TopicsArray}</div>
