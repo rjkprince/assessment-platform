@@ -5,6 +5,8 @@ import Topic from './components/Topic/Topic'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import ProblemList from './components/ProblemList/ProblemList';
 import Classroom from './components/Classroom/Classroom'
+import ClassModule from './components/Classroom/ClassModule/ClassModule';
+import CurriculumPage from './components/Classroom/CurriculumPage/CurriculumPage';
 function App() {
   return (
     <div className="App">
@@ -14,7 +16,9 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/dashboard/:id' component={Topic}/>
           <Route exact path='/courses/:title/:titleId/:id' component={ProblemList}/>
-            <Route exact path='/Classroom' component={Classroom} />
+          <Route exact path='/Classroom' component={Classroom} />
+          <Route exact path="/module/:id" component={ClassModule}/>
+          <Route exact path="/:batchId/weekly-curriculum/:weekId" component={CurriculumPage}/>
         </Switch>
       </Layout>
       </BrowserRouter>

@@ -1,0 +1,175 @@
+.MainBody{
+    width:65%;
+    /* background-color: green; */
+    /* height:100vh; */
+    margin:auto;
+    margin-top:20px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgb(187, 185, 185);
+    margin-bottom: 30px;
+}
+.ModuleImg{
+    width:100%;
+    height:170px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.ImgDetailsRelative{
+    position: relative;
+}
+.ImgDataAbs{
+    position: absolute;
+    top:0;
+    margin-left:40px;
+    
+}
+.ModuleName{
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+.BatchName{
+color:#088DF9;
+margin-top: 7px;
+margin-bottom: 5px;
+font-weight: 700;
+font-size: 18px;
+}
+.IconContainer{
+    display:flex;
+}
+.IconDiv{
+    /* margin-left:10px; */
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  
+}
+.Icon{
+    width: 35px;
+    height: 30px;
+    opacity: 0.9;
+    
+}
+.IconDes{
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+.ProgressContainer{
+ padding: 0 50px ;
+ box-sizing: border-box;
+}
+.Title{
+    color: #333333;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    letter-spacing: .4px;
+}
+.ScoreContainer{
+    display: flex;
+}
+.ScoreContainer .ScoreData{
+    margin-right: 20px;
+}
+.Score{
+    color: rgba(0,0,0,0.7);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+.ScoreTitle{
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    margin: 0;
+    margin-top: 3px;
+}
+.ProgressScore{
+    /* margin-left: 50px; */
+    margin-top: 50px;
+}
+.TitleMod{
+    color: #333333;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    letter-spacing: .4px;
+    /* margin-left: 50px; */
+    margin-top: 60px;
+}
+
+.ModuleCard{
+    width:calc(25% - 20px);
+    /* padding: 5px; */
+    box-sizing: border-box;
+    /* margin-right: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin:10px 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 2px #0096ff;
+   margin-bottom: 20px;
+}
+.ModuleDiv{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ModTopic{
+   color: #737373;
+   letter-spacing: 1px;
+   font-weight: 600;
+   margin-top:13px;
+   font-size: 18px;
+   
+}
+.AvatarSection{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.Avatar{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+.Lecturer{
+    color: #007bff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top:15px;
+    margin-left: 10px;
+}
+.Lecturer:hover{
+    color: #2c65a1;
+    cursor: pointer;
+}
+.Week{
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.6;
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
