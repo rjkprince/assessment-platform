@@ -1,0 +1,124 @@
+.Curriculum{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+
+
+}
+
+.Navigation{
+    display: flex;
+}
+
+.Navigation div{
+    height: 40px;
+}
+
+.Link{
+    padding: 10px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    width: 80px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.Link:hover{
+    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid #ccc;
+}
+
+.ActiveLink{
+    border: none;
+    border-left: 1px solid #ccc ;
+    border-right:  1px solid #ccc;
+    border-top:  1px solid #ccc;
+    background-color: white;
+}
+
+.ActiveLink:hover{
+    border: none;
+    border-left: 1px solid #ccc ;
+    border-right:  1px solid #ccc;
+    border-top:  1px solid #ccc;
+    background-color: white;
+}
+
+.Extra{
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.MainContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.SectionOne{
+    width: 25%;
+}
+.SectionTwo{
+    width: 75%;
+    margin-left: 40px;
+    height: 300px;
+
+}
+.Card{
+    background-color: white;
+    box-shadow: 0 0 5px #b1b1b1;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.SessionCard{
+    height: 85px;
+    overflow: hidden;
+    transition: all linear 300ms;
+}
+.ActiveCard{
+    height: 180px;
+}
+.SessionImg{
+    width: 60px;
+    height: 60px;
+}
+.ImgSec{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.SessionTitle{
+    margin: 0;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.UserData{
+    margin: 0;
+    font-weight: 700;
+}
+.UserScore{
+    font-weight: normal;
+}
+.TitleModule{
+    margin: 0;
+    font-size: 20px;
+}
+.Weeks{
+    color: #41b1ff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.TitleSession{
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.SessionLink{
+    color: #0e99fa;
+    cursor: pointer;
+}
