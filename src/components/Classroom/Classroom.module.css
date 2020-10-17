@@ -1,0 +1,57 @@
+.MainBody{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+}
+.MainBody a{
+    text-decoration: none;
+    color: black;
+}
+.CoursePage{
+    font-size: 16px;
+    font-family: Raleway, serif;
+}
+.Offering{
+    font-weight: 500;
+    font-size: 40px;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.SkillStatus{
+    margin-top: 0;
+    font-family: Roboto,sans-serif;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+}
+.CardsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.Card{
+    width: 275px;
+    cursor: pointer;
+    border: 1px solid deepskyblue;
+   border-radius: 5px;
+    margin: 10px;
+}
+.CourseImg{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.CourseTitle{
+    font-size: 16px;
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    margin: 15px;
+}
+.Units{
+    color: #0096ff;
+    font-size: 16px;
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    margin: 15px;
+}
