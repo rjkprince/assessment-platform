@@ -34,10 +34,10 @@ export default class UnitPage extends Component {
                 <div className={classes.ImgSec}>
                   <img
                     className={classes.SessionImg}
-                    src="https://assessments.edyoda.com/uploads/static/images/module_icon/aws_4QRD91l.png"
+                    src={this.props.courseLogo}
                     alt="session-img"
                   />
-                  <p className={classes.SessionTitle}>Intro to AWS</p>
+                  <p className={classes.SessionTitle}>{this.props.courseTitle}</p>
                 </div>
                 <p className={classes.UserData}>
                   Grade : <span className={classes.UserScore}>NA</span>

@@ -2,13 +2,27 @@ import React, { Component } from "react";
 import classes from "./Curriculum.module.css";
 import GradePage from "./GradePage/GradePage";
 import UnitPage from "./UnitPage/UnitPage";
+import axios from 'axios'
 export default class CurriculumPage extends Component {
   state = {
-    ActiveLink: 1
+    ActiveLink: 1,
+    gradeData:[],
+    unitData:[],
+    courseTitle:"",
+    courseLogo:""
    
   };
   componentDidMount() {
     window.scrollTo(0, 0);
+    axios.get("https://5f8724ee49ccbb00161770a7.mockapi.io/moduleTopicsPage/"+this.props.match.params.batchId)
+    .then(response=>{
+      console.log(response.data.data[this.props.match.params.weekId-1]);
+      let responseData=response.data.data[this.props.match.params.weekId-1]
+      this.setState({courseTitle:responseData.title,
+                     courseLogo:responseData.courseLogo,
+                    gradeData:responseData.gradePage})
+    })
+
   }
   LinkChange = (id) => {
     this.setState({
@@ -41,7 +55,7 @@ export default class CurriculumPage extends Component {
         </div>
          <div className={classes.MainContainer}>
            {
-             this.state.ActiveLink === 1 ? <UnitPage/> : <GradePage/>
+             this.state.ActiveLink === 1 ? <UnitPage courseLogo={this.state.courseLogo} courseTitle={this.state.courseTitle}/> : <GradePage courseLogo={this.state.courseLogo} courseTitle={this.state.courseTitle} gradeData={this.state.gradeData}/>
            }
            
          </div>

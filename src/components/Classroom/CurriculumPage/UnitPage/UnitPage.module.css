@@ -5,10 +5,10 @@
     margin-top: 20px;
 }
 .SectionOne{
-    width: 25%;
+    width: 27%;
 }
 .SectionTwo{
-    width: 75%;
+    width: 73%;
     margin-left: 40px;
     height: 300px;
 
@@ -20,11 +20,13 @@
     padding: 30px;
     margin-bottom: 30px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .SessionCard{
     height: 85px;
     overflow: hidden;
     transition: all linear 300ms;
+   
 }
 .ActiveCard{
     height: 180px;
@@ -39,9 +41,11 @@
     margin-bottom: 20px;
 }
 .SessionTitle{
+    min-width: 90px;
     margin: 0;
     margin-left: 30px;
     font-weight: 600;
+    
 }
 .UserData{
     margin: 0;

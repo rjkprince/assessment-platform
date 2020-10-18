@@ -1,9 +1,10 @@
 .Topic{
-    width: 80%;
+    width: 100%;
     margin: 65px auto;
+    margin-top:25px;
     background-color: #fff;
-    box-shadow: 0 0 25px #ccc;
-    border-radius: 4px;
+    box-shadow: 0 0 9px #ccc;
+    border-radius: 10px;
     box-sizing: border-box;
     padding: 20px 50px;
 }

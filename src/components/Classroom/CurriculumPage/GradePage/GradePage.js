@@ -4,24 +4,17 @@ import classes from './GradePage.module.css'
 
 
 export default class GradePage extends Component {
-    state={
-        topicData:[1,2,3,4]
-    }
-
+  
    
 
 
 
     render() {
 
-        let TopicsArray = this.state.topicData.map((item) => {
+        let TopicsArray = this.props.gradeData.map((item,index) => {
             return (
-              <div className={classes.Problem} key={item.id}>
-                {/* <Link
-                  to={`/courses/${this.state.cardData.title}/${
-                    this.props.location.hash.split("#")[1]
-                  }/${item.id}`}
-                >
+              <div className={classes.Problem} key={index}>
+                <div>
                   <p className={classes.ProblemStatement}>
                     {item.topic}
                     <br />
@@ -31,15 +24,15 @@ export default class GradePage extends Component {
                         : "Submission Date: " + item.date}
                     </p>
                   </p>
-                </Link> */}
+                </div>
                 <p
                   className={`${
-                    item.status === "Pending"
+                    item.marks === "Pending"
                       ? classes.ProblemStatus
                       : classes.ScoreStatus
                   }`}
                 >
-                  {item.status}
+                  {item.marks}
                 </p>
               </div>
             );
@@ -53,11 +46,11 @@ export default class GradePage extends Component {
             <div className={classes.Topic}>
             <div className={classes.TitleSection}>
               <img
-                src="https://assessments.edyoda.com/uploads/static/images/module_icon/aws_4QRD91l.png"
+                src={this.props.courseLogo}
                 className={classes.TopicImg}
               />
               <div>
-                <p className={classes.Title}>AWS</p>
+                <p className={classes.Title}>{this.props.courseTitle}</p>
                
                   <div className={classes.ScoreContainer}>
                     <div className={classes.ScoreData}>
