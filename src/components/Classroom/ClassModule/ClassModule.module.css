@@ -129,6 +129,7 @@ font-size: 18px;
     box-shadow: 0 0 2px #0096ff;
    margin-bottom: 20px;
 }
+
 .ModuleDiv{
     width:100%;
     display: flex;
@@ -141,7 +142,16 @@ font-size: 18px;
    font-weight: 600;
    margin-top:13px;
    font-size: 18px;
-   
+   transition: all linear 200ms;
+}
+.ModImg{
+    transition: all linear 200ms;
+}
+.ModuleCard:hover .ModTopic{
+    transform: scale(1.1);
+}
+.ModuleCard:hover .ModImg{
+    transform: scale(1.1);
 }
 .AvatarSection{
     display: flex;

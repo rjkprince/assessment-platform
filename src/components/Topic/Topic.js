@@ -41,7 +41,7 @@ class Topic extends Component {
       });
   }
   render() {
-    let TopicsArray = this.state.topicData.data.map((item) => {
+    let TopicsArray = this.state.topicData.data.map((item, pos) => {
       return (
         <div className={classes.Problem} key={item.id}>
           <Link
@@ -50,7 +50,7 @@ class Topic extends Component {
             }/${item.id}`}
           >
             <p className={classes.ProblemStatement}>
-              {item.topic}
+              {pos + 1}). {item.topic}
               <br />
               <p className={classes.Date}>
                 {item.date === undefined
