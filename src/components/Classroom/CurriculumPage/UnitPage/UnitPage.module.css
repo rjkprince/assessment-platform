@@ -30,7 +30,7 @@
    
 }
 .ActiveCard{
-    height: 180px;
+    height: 200px;
 }
 .SessionImg{
     width: 60px;
@@ -99,4 +99,8 @@
 }
 .AngleUp{
     transform: rotateZ(-180deg);
+}
+
+.PlanLink{
+    padding-bottom: 30px;
 }
