@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import classes from "./UnitPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 export default class UnitPage extends Component {
   state = {
     ActiveCard: {
@@ -122,23 +122,39 @@ export default class UnitPage extends Component {
                   </h1>
 
                   {item.dayPlan.sessionLink === undefined ? null : (
-                   <Link to={{pathname:"/sessionpage/"+item.id,state:{dayPlan:this.props.unitData.modulePlan[this.state.ActiveWeek - 1]
-                    .weekPlan[item.id-1]}}} className={`${classes.SessionLink} ${classes.PlanLink}`}>Session Plan</Link> 
+                    <Link
+                      to={{
+                        pathname: "/sessionpage/" + item.id,
+                        state: {
+                          dayPlan: this.props.unitData.modulePlan[
+                            this.state.ActiveWeek - 1
+                          ].weekPlan[item.id - 1],
+                        },
+                      }}
+                      className={`${classes.SessionLink} ${classes.PlanLink}`}
+                    >
+                      Session Plan
+                    </Link>
                   )}
                   {item.dayPlan.assignPlan === undefined ? null : (
                     <p className={classes.SessionLink}>
                       {item.dayPlan.assignPlan}
                     </p>
                   )}
-                 
                   {item.dayRecording === undefined ? null : (
-                    <p className={classes.SessionLink}>Session Recording</p>
+                    <p className={`${classes.SessionLink} ${classes.Quiz}`}>
+                      Session Recording
+                    </p>
                   )}
-                   {item.dayPlan.quiz === undefined ? null : (
-                    <p className={classes.SessionLink}>{item.dayPlan.quiz}</p>
+                  {item.dayPlan.quiz === undefined ? null : (
+                    <p className={`${classes.SessionLink} ${classes.Quiz}`}>
+                      {item.dayPlan.quiz}
+                    </p>
                   )}
-                   {item.dayPlan.feedBack === undefined ? null : (
-                    <p className={classes.SessionLink}>{item.dayPlan.feedBack}</p>
+                  {item.dayPlan.feedBack === undefined ? null : (
+                    <p className={`${classes.SessionLink} ${classes.Quiz}`}>
+                      {item.dayPlan.feedBack}
+                    </p>
                   )}
                 </div>
               );

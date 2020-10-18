@@ -30,7 +30,7 @@
    
 }
 .ActiveCard{
-    height: 200px;
+    height: 220px;
 }
 .SessionImg{
     width: 60px;
@@ -81,6 +81,7 @@
 .SessionLink{
     color: #0e99fa;
     cursor: pointer;
+
 }
 .NoData{
     font-size: 26px;
@@ -100,7 +101,8 @@
 .AngleUp{
     transform: rotateZ(-180deg);
 }
-
-.PlanLink{
-    padding-bottom: 30px;
+.Quiz{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
 }

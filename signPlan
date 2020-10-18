@@ -1,0 +1,179 @@
+[33mcommit 872090fc13ebf8429a7b85163897ede384565bc3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: cb395cd 89aca38
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sun Oct 18 21:19:52 2020 +0530
+
+    Merge branch 'main' of https://github.com/rjkprince/assessment-platform into main
+
+[33mcommit cb395cd3a90293fcdf0f3e5d76d5e1892f02fb48[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sun Oct 18 21:18:17 2020 +0530
+
+    Units and Grades page completed
+
+[33mcommit 89aca3854e2c9376f365550faf77e2e2fc545e22[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Sun Oct 18 18:22:29 2020 +0530
+
+    updating Unit Page
+
+[33mcommit df03a30e66bb1ec01e796cb0731070b8055f4006[m
+Merge: cc4d561 df08f19
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sun Oct 18 14:51:38 2020 +0530
+
+    Merge branch 'main' of https://github.com/rjkprince/assessment-platform into main
+    
+    # Conflicts:
+    #       src/components/Classroom/CurriculumPage/UnitPage/UnitPage.js
+
+[33mcommit cc4d561b00e6efc658652b6386aa305d676dc3cd[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sun Oct 18 14:49:54 2020 +0530
+
+    fixed session card collapsing behaviour
+
+[33mcommit df08f19ccdda287be15ef72d42a08509e1811db0[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Sun Oct 18 14:45:53 2020 +0530
+
+    Completed Grade Page
+
+[33mcommit 436bf2c760d1a0e253ee71de4bfa008b8ed14233[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Sun Oct 18 12:57:38 2020 +0530
+
+    Updating Grades Page
+
+[33mcommit e014072fc9c2cb90b2a9c1cc4333397bfaec1eed[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sun Oct 18 12:45:37 2020 +0530
+
+    fixed indexing in topics page
+
+[33mcommit b7ae0b73a420b9e66bf12d1b87e4aa4cf30c0a9c[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sun Oct 18 01:26:36 2020 +0530
+
+    started curriculum page and ready with static Unit section
+
+[33mcommit 63996820c072b7c8da6faf2c6e5e4ffa89d123f5[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Sat Oct 17 19:03:57 2020 +0530
+
+    Created Module Page
+
+[33mcommit de693da5bdb809f744d0c129e599f9449e1bcd91[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sat Oct 17 14:43:10 2020 +0530
+
+    Completed with classroom page and Dsa section
+
+[33mcommit 70211bc92d99aa359da1397dba6d1b0b9b89d20a[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Sat Oct 17 14:06:18 2020 +0530
+
+    added Classroom page and dsa card done
+
+[33mcommit 2a6a70eabcd9a1c1a57eee57efd74653b1932f47[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Fri Oct 16 22:12:22 2020 +0530
+
+    Completed Problem Listing Page
+
+[33mcommit 9f826ea2828af1314fad207b5df96f7aad2f0b41[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Fri Oct 16 18:47:44 2020 +0530
+
+    Updated changes in the Problem Listing Page
+
+[33mcommit d84f8d52760a8ca4441cd5570d72ed203123194d[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Fri Oct 16 18:29:32 2020 +0530
+
+    fixed styling for submission date in topics page
+
+[33mcommit 89365e694c35d6014cbdd06055f114f85be99c14[m
+Merge: 27a6480 0b9ccbb
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Fri Oct 16 16:45:13 2020 +0530
+
+    Merge branch 'main' of https://github.com/rjkprince/assessment-platform into main
+
+[33mcommit 0b9ccbb464461aba63dbb2278c95b3947c65ac00[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Fri Oct 16 16:41:18 2020 +0530
+
+    removed p tag white color inherit problem
+
+[33mcommit 27a6480ff95558c1888e407cb45632fb3625f912[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Fri Oct 16 16:41:15 2020 +0530
+
+    Created Problems Listing Page
+
+[33mcommit 4bb29e90195aad15e4e81fcf54f7248954cdd899[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Fri Oct 16 14:54:06 2020 +0530
+
+    Added the Date of Submission of Topic Data and fixed the  Header section
+
+[33mcommit 5702fecb86b2893cf0a12c0335fb77c043f67ad8[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Fri Oct 16 14:20:45 2020 +0530
+
+    dynamic topics details page updated
+
+[33mcommit 017917964f839e34e71e38bbc565e34bd6b54deb[m
+Author: kiran mayi <kiranmayi.raj29@gmail.com>
+Date:   Fri Oct 16 12:59:18 2020 +0530
+
+    Updated footer section with Icons
+
+[33mcommit be4483e2d9dcf65e4a46d8813de15f967a5dc60a[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Fri Oct 16 12:52:23 2020 +0530
+
+    changed endpoint in home
+
+[33mcommit bdf4e0fef24861bafa1368f9d3b5e7615f97f46c[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Thu Oct 15 23:06:54 2020 +0530
+
+    deleted .idea from git
+
+[33mcommit eff7f6cc2e8796342a61995ca53c0399b1160108[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Thu Oct 15 23:03:11 2020 +0530
+
+    ignored .idea folder
+
+[33mcommit 2a8421f756046a311e5ff6ac8cfd16de9bfb3476[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Thu Oct 15 23:00:19 2020 +0530
+
+    added Topic details page
+
+[33mcommit 4cd0f83df5de7a731ba2fb48d03665311bb56818[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Wed Oct 14 12:28:23 2020 +0530
+
+    added axios and replaced a tag with Link
+
+[33mcommit fa8e397ff65dd6ac9253374e5bc758225026922a[m
+Author: sagarparikh301297 <sagar.parikh@krishtechnolabs.com>
+Date:   Tue Oct 13 23:15:38 2020 +0530
+
+    Home page created
+
+[33mcommit 2e4a982b12211d50d17a4f85285027845ece5568[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Tue Oct 13 21:19:49 2020 +0530
+
+    added Layout
+
+[33mcommit 7121779e055c0792882bad6e0854be8e770386c1[m
+Author: Rajesh kumar <prince.rk.cool@gmail.com>
+Date:   Mon Oct 12 20:58:49 2020 +0530
+
+    initial commit

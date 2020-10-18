@@ -1,9 +1,12 @@
 .SessionSection{
     width:75%;
     /* background-color: green; */
-    margin:0 auto;
+    margin:30px auto;
     height: 100vh;
     padding:10px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
 }
 .PageTitle{
     font-size: 1.75rem;
