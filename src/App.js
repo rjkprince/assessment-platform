@@ -8,6 +8,7 @@ import Classroom from './components/Classroom/Classroom'
 import ClassModule from './components/Classroom/ClassModule/ClassModule';
 import CurriculumPage from './components/Classroom/CurriculumPage/CurriculumPage';
 import SessionPage from './components/Classroom/CurriculumPage/SessionPage/SessionPage';
+import SessionRecord from './components/Classroom/CurriculumPage/SessionRecord/SessionRecord';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/module/:id" component={ClassModule}/>
           <Route exact path="/:batchId/weekly-curriculum/:weekId" component={CurriculumPage}/>
           <Route exact path="/sessionpage/:sessionId/" component={SessionPage}/>
+          <Route exact path="/sessionrecord/:recordId" component={SessionRecord}/>
         </Switch>
       </Layout>
       </BrowserRouter>

@@ -142,9 +142,16 @@ export default class UnitPage extends Component {
                     </p>
                   )}
                   {item.dayRecording === undefined ? null : (
-                    <p className={`${classes.SessionLink} ${classes.Quiz}`}>
+                    <Link to={{
+                      pathname: "/sessionrecord/" + item.id,
+                      state: {
+                        dayPlan: this.props.unitData.modulePlan[
+                          this.state.ActiveWeek - 1
+                        ].weekPlan[item.id - 1],
+                      },
+                    }} className={`${classes.SessionLink} ${classes.Quiz}`}>
                       Session Recording
-                    </p>
+                    </Link>
                   )}
                   {item.dayPlan.quiz === undefined ? null : (
                     <p className={`${classes.SessionLink} ${classes.Quiz}`}>
