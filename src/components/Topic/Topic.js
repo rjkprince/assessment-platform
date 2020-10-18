@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import classes from "./Topic.module.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import ProgressLoader from "../ProgressLoader/ProgressLoader";
 class Topic extends Component {
   state = {
     topicData: {
       data: [],
     },
     cardData: {},
+    loaderOne: true,
+    loaderTwo: true,
   };
 
   componentDidMount() {
@@ -21,6 +24,7 @@ class Topic extends Component {
       .then((res) => {
         this.setState({
           cardData: res.data,
+          loaderOne: false,
         });
       })
       .catch((err) => {
@@ -34,6 +38,7 @@ class Topic extends Component {
       .then((response) => {
         this.setState({
           topicData: response.data,
+          loaderTwo: false,
         });
       })
       .catch((error) => {
@@ -72,7 +77,9 @@ class Topic extends Component {
       );
     });
 
-    return (
+    return this.state.loaderOne === true && this.state.loaderTwo === true ? (
+      <ProgressLoader />
+    ) : (
       <div className={classes.Topic}>
         <div className={classes.TitleSection}>
           <img

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from "./ProblemList.module.css";
 import axios from "axios";
+import ProgressLoader from "../ProgressLoader/ProgressLoader";
 
 export default class ProblemList extends Component {
   state = {
@@ -8,6 +9,8 @@ export default class ProblemList extends Component {
     Title: "",
     Topic: "",
     topicList: {},
+    loaderOne: true,
+    loaderTwo: true,
   };
 
   componentDidMount() {
@@ -25,6 +28,7 @@ export default class ProblemList extends Component {
       .then((response) => {
         this.setState({
           Topic: response.data.data[TopicId - 1].topic,
+          loaderOne: false,
         });
         // console.log(this.state.Topic);
       })
@@ -38,6 +42,7 @@ export default class ProblemList extends Component {
       .then((response) => {
         this.setState({
           problemsList: response.data.data[TopicId].data,
+          loaderTwo: false,
         });
         console.log(this.state.problemsList);
       })
@@ -76,7 +81,9 @@ export default class ProblemList extends Component {
         </div>
       );
     });
-    return (
+    return this.state.loaderOne === true && this.state.loaderTwo === true ? (
+      <ProgressLoader />
+    ) : (
       <div className={classes.ProblemList}>
         <p className={classes.ProblemTitle}>
           {this.state.Title} &#x3E; {this.state.Topic} &#x3E;

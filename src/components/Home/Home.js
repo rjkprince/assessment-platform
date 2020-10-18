@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import classes from "./Home.module.css";
 import Card from "./Card/Card";
 import axios from "axios";
+import ProgressLoader from "../ProgressLoader/ProgressLoader";
 
 export default class Home extends Component {
   state = {
     cardData: [],
+    loading: true,
   };
 
   componentDidMount = () => {
@@ -14,6 +16,7 @@ export default class Home extends Component {
       .then((res) => {
         this.setState({
           cardData: res.data,
+          loading: false,
         });
       })
       .catch((err) => {
@@ -23,7 +26,9 @@ export default class Home extends Component {
   };
 
   render() {
-    return (
+    return this.state.loading ? (
+      <ProgressLoader />
+    ) : (
       <div className={classes.MainBody}>
         <div className={classes.CoursePage}>
           <p className={classes.Offering}>Practice Arena</p>

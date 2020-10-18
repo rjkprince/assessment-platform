@@ -1,0 +1,9 @@
+.ProgressLoader{
+    width: 100%;
+    height: 100%;
+
+}
+.ProgressLoader img{
+    width: 100%;
+    height: 85vh;
+}

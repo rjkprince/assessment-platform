@@ -3,6 +3,7 @@ import classes from "./Curriculum.module.css";
 import GradePage from "./GradePage/GradePage";
 import UnitPage from "./UnitPage/UnitPage";
 import axios from "axios";
+import ProgressLoader from "../../ProgressLoader/ProgressLoader";
 export default class CurriculumPage extends Component {
   state = {
     ActiveLink: 1,
@@ -10,6 +11,7 @@ export default class CurriculumPage extends Component {
     unitData: null,
     courseTitle: "",
     courseLogo: "",
+    loader: true,
   };
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -27,6 +29,7 @@ export default class CurriculumPage extends Component {
           courseLogo: responseData.courseLogo,
           gradeData: responseData.gradePage,
           unitData: responseData.unitPage,
+          loader: false,
         });
       });
   }
@@ -37,7 +40,9 @@ export default class CurriculumPage extends Component {
   };
 
   render() {
-    return (
+    return this.state.loader ? (
+      <ProgressLoader />
+    ) : (
       <div className={classes.Curriculum}>
         <div className={classes.Navigation}>
           <div
