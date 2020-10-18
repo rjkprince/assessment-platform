@@ -77,7 +77,7 @@ class Topic extends Component {
       );
     });
 
-    return this.state.loaderOne === true && this.state.loaderTwo === true ? (
+    return this.state.loaderOne || this.state.loaderTwo ? (
       <ProgressLoader />
     ) : (
       <div className={classes.Topic}>

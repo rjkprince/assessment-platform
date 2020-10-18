@@ -81,7 +81,7 @@ export default class ProblemList extends Component {
         </div>
       );
     });
-    return this.state.loaderOne === true && this.state.loaderTwo === true ? (
+    return this.state.loaderOne || this.state.loaderTwo ? (
       <ProgressLoader />
     ) : (
       <div className={classes.ProblemList}>
