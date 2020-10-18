@@ -123,7 +123,7 @@ export default class UnitPage extends Component {
 
                   {item.dayPlan.sessionLink === undefined ? null : (
                    <Link to={{pathname:"/sessionpage/"+item.id,state:{dayPlan:this.props.unitData.modulePlan[this.state.ActiveWeek - 1]
-                    .weekPlan[item.id]}}} className={classes.SessionLink}>Session Plan</Link> 
+                    .weekPlan[item.id-1]}}} className={classes.SessionLink}>Session Plan</Link> 
                   )}
                   {item.dayPlan.assignPlan === undefined ? null : (
                     <p className={classes.SessionLink}>
