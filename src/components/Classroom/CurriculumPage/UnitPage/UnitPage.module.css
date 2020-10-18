@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    height: fit-content;
 }
 .SectionOne{
     width: 27%;
@@ -10,7 +11,7 @@
 .SectionTwo{
     width: 73%;
     margin-left: 40px;
-    height: 300px;
+
 
 }
 .Card{
@@ -59,9 +60,15 @@
     font-size: 20px;
 }
 .Weeks{
-    color: #41b1ff;
+    color: black;
+    opacity: 0.6;
     font-weight: 700;
     margin-top: 20px;
+    cursor: pointer;
+}
+.BlueWeek{
+    color: dodgerblue;
+    opacity: 1;
 }
 .TitleSession{
     margin: 0;
@@ -74,4 +81,22 @@
 .SessionLink{
     color: #0e99fa;
     cursor: pointer;
+}
+.NoData{
+    font-size: 26px;
+    color: #000000;
+    opacity: 0.6;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+.TitleWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.AngleDown{
+    transition: all linear 300ms;
+}
+.AngleUp{
+    transform: rotateZ(-180deg);
 }
