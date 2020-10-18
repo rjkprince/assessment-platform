@@ -1,0 +1,73 @@
+.MainContainer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.SectionOne{
+    width: 25%;
+}
+.SectionTwo{
+    width: 75%;
+    margin-left: 40px;
+    height: 300px;
+
+}
+.Card{
+    background-color: white;
+    box-shadow: 0 0 5px #b1b1b1;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.SessionCard{
+    height: 85px;
+    overflow: hidden;
+    transition: all linear 300ms;
+}
+.ActiveCard{
+    height: 180px;
+}
+.SessionImg{
+    width: 60px;
+    height: 60px;
+}
+.ImgSec{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.SessionTitle{
+    margin: 0;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.UserData{
+    margin: 0;
+    font-weight: 700;
+}
+.UserScore{
+    font-weight: normal;
+}
+.TitleModule{
+    margin: 0;
+    font-size: 20px;
+}
+.Weeks{
+    color: #41b1ff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.TitleSession{
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.SessionLink{
+    color: #0e99fa;
+    cursor: pointer;
+}
