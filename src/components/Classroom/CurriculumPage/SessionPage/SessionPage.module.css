@@ -1,0 +1,35 @@
+.SessionSection{
+    width:75%;
+    /* background-color: green; */
+    margin:0 auto;
+    height: 100vh;
+    padding:10px 50px;
+}
+.PageTitle{
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.Strong{
+    box-sizing: border-box;
+    font-weight: bolder;
+    font-size: larger;
+    /* font-size: 1rem; */
+    font-weight: 700;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.ClickHere{
+    margin-bottom: 18px;
+}
+
+.TopicsDiv{
+    margin-bottom: 35px;
+}
+.Topics{
+    margin:10px;
+}

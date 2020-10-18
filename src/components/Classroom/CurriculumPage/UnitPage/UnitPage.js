@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from "./UnitPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'
 export default class UnitPage extends Component {
   state = {
     ActiveCard: {
@@ -121,7 +122,8 @@ export default class UnitPage extends Component {
                   </h1>
 
                   {item.dayPlan.sessionLink === undefined ? null : (
-                    <p className={classes.SessionLink}>Session Plan</p>
+                   <Link to={{pathname:"/sessionpage/"+item.id,state:{dayPlan:this.props.unitData.modulePlan[this.state.ActiveWeek - 1]
+                    .weekPlan[item.id]}}} className={classes.SessionLink}>Session Plan</Link> 
                   )}
                   {item.dayPlan.assignPlan === undefined ? null : (
                     <p className={classes.SessionLink}>
