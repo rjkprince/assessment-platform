@@ -40,11 +40,14 @@ export default class ProblemList extends Component {
     axios
       .get("https://5ee2489c8b27f30016094881.mockapi.io/ProblemList/" + TitleId)
       .then((response) => {
+        let resData =
+          response.data.data[TopicId] === undefined
+            ? []
+            : response.data.data[TopicId].data;
         this.setState({
-          problemsList: response.data.data[TopicId].data,
+          problemsList: resData,
           loaderTwo: false,
         });
-        console.log(this.state.problemsList);
       })
       .catch((error) => {
         console.log("problem details fetch request failed", error);

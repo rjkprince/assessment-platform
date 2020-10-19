@@ -15,7 +15,6 @@ export default class classModule extends Component {
       .get("https://5f8724ee49ccbb00161770a7.mockapi.io/modules")
       .then((response) => {
         this.setState({ moduleData: [...response.data], loader: false });
-        console.log(this.state.moduleData);
       });
   }
   render() {

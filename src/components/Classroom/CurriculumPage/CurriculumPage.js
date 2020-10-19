@@ -21,7 +21,6 @@ export default class CurriculumPage extends Component {
           this.props.match.params.batchId
       )
       .then((response) => {
-        console.log(response.data.data[this.props.match.params.weekId - 1]);
         let responseData =
           response.data.data[this.props.match.params.weekId - 1];
         this.setState({
