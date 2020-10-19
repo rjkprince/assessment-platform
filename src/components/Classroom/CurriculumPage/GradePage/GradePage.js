@@ -33,7 +33,11 @@ export default class GradePage extends Component {
     return (
       <div className={classes.Topic}>
         <div className={classes.TitleSection}>
-          <img src={this.props.courseLogo} className={classes.TopicImg} />
+          <img
+            src={this.props.courseLogo}
+            className={classes.TopicImg}
+            alt="courses"
+          />
           <div>
             <p className={classes.Title}>{this.props.courseTitle}</p>
 

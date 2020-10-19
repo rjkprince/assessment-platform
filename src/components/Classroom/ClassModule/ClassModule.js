@@ -26,11 +26,7 @@ export default class classModule extends Component {
           key={item.id}
           className={classes.ModuleCard}
         >
-          <img
-            className={classes.ModImg}
-            src={item.thumbnail}
-            alt="Module Image"
-          />
+          <img className={classes.ModImg} src={item.thumbnail} alt="Module" />
           <p className={classes.ModTopic}>{item.title}</p>
           <div className={classes.AvatarSection}>
             <img className={classes.Avatar} src={item.avatar} alt="avatar" />
@@ -48,7 +44,7 @@ export default class classModule extends Component {
           <img
             className={classes.ModuleImg}
             src="https://assessments.edyoda.com/static/images/Only-Image.jpg"
-            alt="module Image"
+            alt="module"
           />
           <div className={classes.ImgDataAbs}>
             <h2 className={classes.ModuleName}>
@@ -60,6 +56,7 @@ export default class classModule extends Component {
                 <img
                   className={classes.Icon}
                   src="https://assessments.edyoda.com/static/images/Playlist%20Icon.png"
+                  alt="module"
                 />
                 <p className={classes.IconDes}>
                   5 <br /> modules
@@ -69,6 +66,7 @@ export default class classModule extends Component {
                 <img
                   className={classes.Icon}
                   src="https://assessments.edyoda.com/static/images/Clock%20Icon.png"
+                  alt="module"
                 />
                 <p className={classes.IconDes}>
                   20 <br /> weeks

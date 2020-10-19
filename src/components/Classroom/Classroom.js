@@ -10,24 +10,24 @@ class Classroom extends Component {
           <p className={classes.SkillStatus}>Your Enrolled Courses</p>
           <div className={classes.CardsWrapper}>
             <Link to="/module/RB020420">
-            <div className={classes.Card}>
-              <img
-                src="https://assessments.edyoda.com/uploads/static/images/RB020420/MicrosoftTeams-image.png"
-                className={classes.CourseImg}
-                alt="course-img"
-              />
-              <h1 className={classes.CourseTitle}>
-                RB-020420 - React Developer Program
-              </h1>
-              <p className={classes.Units}>9 Units</p>
-            </div>
+              <div className={classes.Card}>
+                <img
+                  src="https://assessments.edyoda.com/uploads/static/images/RB020420/MicrosoftTeams-image.png"
+                  className={classes.CourseImg}
+                  alt="course"
+                />
+                <h1 className={classes.CourseTitle}>
+                  RB-020420 - React Developer Program
+                </h1>
+                <p className={classes.Units}>9 Units</p>
+              </div>
             </Link>
             <Link to="/dashboard/DSA-130720#130720">
               <div className={classes.Card}>
                 <img
                   src="https://assessments.edyoda.com/uploads/static/images/DSA130720/MicrosoftTeams-image_1.png"
                   className={classes.CourseImg}
-                  alt="course-img"
+                  alt="courses"
                 />
                 <h1 className={classes.CourseTitle}>
                   DSA-130720 - Data Structures and Algorithms
